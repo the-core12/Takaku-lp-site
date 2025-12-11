@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>価格耐性デザイン - 静かな権威</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600;700&family=Shippori+Mincho:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0f172a', // slate-900 base
+                            800: '#1e293b',
+                        },
+                        gold: {
+                            400: '#C5A059', // Muted Gold
+                            500: '#B08D55',
+                            600: '#9A7B4F',
+                        },
+                        bronze: {
+                            500: '#CD7F32',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Shippori Mincho"', '"Noto Serif JP"', 'serif'],
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    },
+                    spacing: {
+                        '128': '32rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Shippori Mincho', serif;
+        }
+
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+    <!-- 1. Hero Section -->
+    <section
+        class="relative bg-navy-900 text-white min-h-screen flex items-center justify-center py-24 px-4 overflow-hidden">
+        <!-- Background Abstract/Overlay -->
+        <div
+            class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10 mix-blend-overlay">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-navy-900/90 to-navy-900"></div>
+
+        <div class="relative max-w-4xl mx-auto text-center z-10">
+            <div class="mb-10 animate-fade-in-up">
+                <span
+                    class="inline-block py-1 px-4 border border-gold-500/50 text-gold-400 text-xs md:text-sm tracking-[0.2em] mb-4 uppercase">
+                    For Business Owners
+                </span>
+                <p class="font-serif text-xl md:text-2xl text-white tracking-wider leading-relaxed">
+                    「品質」には自信があるのに、<br class="md:hidden">「価格」で比較されてしまう<span class="inline-block">経営者様へ</span>
+                </p>
+            </div>
+
+
+            <p class="text-gold-400 font-bold tracking-widest mb-6 text-sm md:text-base uppercase">
+                あなたの製品が「安物」に見える<br class="md:hidden">致命的欠陥を<span class="inline-block">即座に暴露する</span>
+            </p>
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-8 tracking-wide">
+                価格競争で失う<span class="inline-block">「利益の50%」</span>を<br class="md:hidden"><span
+                    class="inline-block">設計で取り戻す。</span><br class="hidden md:block">
+                <span class="mt-4 block text-2xl md:text-4xl lg:text-5xl font-normal text-gray-300">あなたのデザインを<br
+                        class="md:hidden"><span class="inline-block">「値引き地獄」</span>から救い出す、<br>設計の見直し。</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-light">
+                価格で客を奪う「競合」との比較の前提を外す。<br>定価で選ばれ続ける「静かな権威」デザイン戦略。
+            </p>
+            <a href="#offer"
+                class="inline-block bg-gold-500 hover:bg-gold-400 text-white font-serif font-bold py-4 px-8 md:px-12 rounded-full shadow-lg border-b-4 border-gold-700 active:border-b-0 active:translate-y-1 active:shadow-inner transition-all duration-100 text-lg md:text-xl tracking-wider group relative overflow-hidden">
+                <span class="relative z-10 text-shadow-sm">「安売り競争」を終わらせる<br class="md:hidden"><span
+                        class="md:ml-2">【30分無料診断】を予約する</span></span>
+                <div class="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition duration-300"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. Agitation Section -->
+    <section class="py-24 md:py-32 bg-white px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy-900 text-center mb-16">
+                なぜ、あなたの<span class="inline-block">「良い商品」</span>は<br><span class="inline-block">値上げが通らないのか？</span>
+            </h2>
+            <div class="space-y-8">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                        <i class="fa-solid fa-xmark text-red-800 text-2xl w-8"></i>
+                    </div>
+                    <p class="text-lg md:text-xl text-gray-700 font-medium ml-4">
+                        「高い」と言われ、見積もり後に連絡が途絶える屈辱。
+                    </p>
+                </div>
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                        <i class="fa-solid fa-xmark text-red-800 text-2xl w-8"></i>
+                    </div>
+                    <p class="text-lg md:text-xl text-gray-700 font-medium ml-4">
+                        利益を削り、身を粉にして働いても、競合に価格で負ける怒り。
+                    </p>
+                </div>
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                        <i class="fa-solid fa-xmark text-red-800 text-2xl w-8"></i>
+                    </div>
+                    <p class="text-lg md:text-xl text-gray-700 font-medium ml-4">
+                        顧客はあなたの「品質」を見ていない。彼らは「見た目」で判断し、あなたを安物扱いしている。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Solution Section -->
+    <section class="py-24 md:py-32 bg-gray-100 px-4 border-t border-gray-200">
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="text-gold-600 font-bold tracking-widest mb-4 uppercase">Solution</p>
+            <h2 class="text-3xl md:text-5xl font-serif font-bold text-navy-900 mb-12">
+                Price Resistance Design<br>
+                <span class="text-2xl md:text-3xl mt-2 block opacity-80"><span
+                        class="inline-block">（価格耐性デザイン）</span></span>
+            </h2>
+            <div class="prose prose-lg mx-auto text-gray-700 text-left md:text-center leading-loose">
+                <p class="mb-8 font-serif text-xl md:text-2xl font-bold text-navy-800">
+                    デザインとは装飾ではない。「権威」の構築だ。
+                </p>
+                <p>
+                    言葉で説得する前に、視覚で<span class="inline-block">「圧倒的な格の違い」</span>を植え付ける。<br>
+                    競合が騒げば騒ぐほど、あなたの<span class="inline-block">「静かな権威」</span>が際立ち、<br class="hidden md:block">
+                    顧客は価格を無視して<span class="inline-block">あなたを選ぶようになる。</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. The Offer -->
+    <section class="py-24 bg-white text-slate-900">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <p class="text-yellow-600 font-bold tracking-widest text-sm mb-4 uppercase">Proven Results</p>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6 leading-tight">
+                    論より証拠。<br>
+                    「価格」ではなく<span class="inline-block">「権威」で選ばれた実例</span>
+                </h2>
+                <p class="text-gray-600 leading-relaxed">
+                    「静かな権威」を纏った瞬間、顧客の反応は劇的に変わる。<br>
+                    これらは単なるデザインの変更ではなく、ビジネスモデルの転換である。
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+
+                <div class="group">
+
+
+                    <div class="border-l-4 border-yellow-600 pl-6 py-2">
+                        <div class="w-full mb-6 relative overflow-hidden rounded-sm shadow-lg">
+                            <img src="./images/case1_v2_1.jpg" alt="Yellow Base Logo Proposal 1"
+                                class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="w-full mb-6 relative overflow-hidden rounded-sm shadow-lg">
+                            <img src="./images/case1_v2_2.jpg" alt="Yellow Base Logo Proposal 2"
+                                class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="flex items-baseline gap-3 mb-2">
+                            <h3 class="text-4xl font-serif font-bold text-slate-900">1.25倍<sup
+                                    class="text-sm ml-1 text-gray-400 font-normal">※1</sup></h3>
+                            <span class="text-lg font-bold text-slate-600">の値上げに成功</span>
+                        </div>
+
+                        <div class="space-y-4 text-gray-700">
+                            <div>
+                                <span class="text-xs font-bold text-gray-400 block mb-1">【目的】</span>
+                                <p class="text-sm leading-relaxed">
+                                    レモネードという普遍的な商材を取扱うメーカーさんからのご依頼。<br>
+                                    全体の書体には丸みのあるフォントを採用し、大文字と小文字の調和を取りながら、誰が見ても親しみやすさを感じられるように配慮している。<br>
+                                    シンプルでありながらも記憶の片隅に残る事を意図している。
+                                </p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-yellow-600 block mb-1">【デザインの狙い】</span>
+                                <p class="text-sm leading-relaxed font-medium">
+                                    ロゴの冒頭に置かれた「Y」には、ストローを思わせる軽やかなカットを施し、レモネードを取扱うメーカーとしての世界観をそっと忍ばせている。<br>
+                                    文字の一部は、印刷物や媒体に応じて伸ばせる余白を持たせており、表現の幅が広がる設計になっている。<br>
+                                    また、ロゴ全体を右寄せにすることで、デザイン物の右上・右下に配置した際にも清らかに収まり、視線の流れを邪魔しない端正な佇まいを実現している。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <img src="./images/case1_product.jpg" alt="Yellow Base Product Package"
+                                class="w-full h-auto rounded shadow-md mb-6">
+
+                            <div class="bg-gray-50 border border-gray-200 p-6 rounded relative overflow-hidden">
+                                <div class="absolute top-0 right-0 bg-gold-500 text-white text-xs font-bold px-3 py-1">
+                                    RESULT</div>
+
+                                <p class="text-sm text-gray-600 mb-4 font-medium leading-relaxed">
+                                    ノーブランドの1袋1,000円からブランドデザインを構築したことにより、1,250円に値上げすることに成功。
+                                </p>
+
+                                <div
+                                    class="flex items-center justify-center gap-4 text-navy-900 bg-white p-4 rounded border border-gray-100 shadow-sm">
+                                    <div class="text-center opacity-50">
+                                        <span class="block text-xs mb-1">Before</span>
+                                        <span class="text-xl font-bold font-serif">¥1,000</span>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-right text-gold-500"></i>
+                                    <div class="text-center">
+                                        <span class="block text-xs text-gold-600 font-bold mb-1">After</span>
+                                        <span class="text-3xl font-bold font-serif">¥1,250</span>
+                                    </div>
+                                </div>
+                                <p class="text-center mt-3 text-gold-600 font-bold text-sm tracking-widest">値上げ率 1.25倍
+                                    達成</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="mt-12 border-t border-gray-200 pt-6">
+                <ul class="text-xs text-gray-400 space-y-1 text-right list-none">
+                    <li>※1 [集計期間] 2025年６月〜10月。リニューアル前後の商品単価比較。自社調べ。</li>
+                    <li>※掲載している実績は個別の事例であり、すべての成果を保証するものではありません。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. The Offer -->
+    <section id="offer" class="py-24 md:py-32 bg-white px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="border-2 border-navy-900 p-8 md:p-16 relative bg-white shadow-2xl">
+                <div
+                    class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-navy-900 text-gold-400 px-6 py-2 font-serif font-bold tracking-wider uppercase text-sm">
+                    Special Invitation
+                </div>
+
+                <h2 class="text-2xl md:text-4xl font-serif font-bold text-navy-900 text-center mb-10 leading-snug">
+                    【先着5社限定】<br>
+                    競合が盗めない<span class="inline-block">「値上げ設計図」作成</span><br>
+                    <span class="inline-block">プライベート・セッション</span>
+                </h2>
+
+                <div class="bg-gray-50 p-8 mb-10 border-l-4 border-gold-400">
+                    <h3 class="text-xl font-bold text-navy-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-check text-gold-500 mr-3"></i>
+                        無料「値崩れ診断」
+                    </h3>
+                    <p class="text-gray-700">
+                        あなたのデザインが「値引き屋」の烙印を押された決定的な欠陥を24時間以内に特定する。
+                    </p>
+                </div>
+
+                <p class="text-center text-red-800 font-bold mb-8">
+                    ※今月の受付は残り3枠のみ
+                </p>
+
+                <div class="mt-10">
+                    <!-- 
+                        【重要】フォームを機能させるための設定
+                        1. https://formspree.io/ にアクセスして無料登録（Gmailで登録すればGmailに届きます）
+                        2. New Formを作成
+                        3. 発行されたURL（例: https://formspree.io/f/xxyyzz）を下の action="" の中に貼り付けてください。
+                    -->
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
+                        class="space-y-6 text-left max-w-2xl mx-auto">
+                        <!-- 隠しフィールド: メールの件名を設定 -->
+                        <input type="hidden" name="_subject" value="【LPより問い合わせ】値上げ設計図セッションの申し込み" />
+
+                        <!-- Name Input -->
+                        <div>
+                            <label for="name" class="block text-sm font-bold text-navy-900 mb-2">お名前 <span
+                                    class="text-red-600">*</span></label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition duration-200 bg-gray-50"
+                                placeholder="例：山田 太郎">
+                        </div>
+
+                        <!-- Email Input -->
+                        <div>
+                            <label for="email" class="block text-sm font-bold text-navy-900 mb-2">メールアドレス <span
+                                    class="text-red-600">*</span></label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition duration-200 bg-gray-50"
+                                placeholder="例：info@example.com">
+                        </div>
+
+                        <!-- Message Input -->
+                        <div>
+                            <label for="message"
+                                class="block text-sm font-bold text-navy-900 mb-2">ご相談内容（現状の課題など）</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition duration-200 bg-gray-50"
+                                placeholder="例：競合との価格競争に疲弊しており、デザインで差別化を図りたいと考えています。"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center pt-4">
+                            <button type="submit"
+                                class="inline-block w-full md:w-auto bg-navy-900 hover:bg-navy-800 text-white font-serif font-bold py-5 px-10 rounded-lg shadow-lg border-b-4 border-navy-950 active:border-b-0 active:translate-y-1 active:shadow-inner transition-all duration-100 text-lg md:text-xl tracking-wider cursor-pointer relative overflow-hidden group">
+                                <span class="relative z-10 text-shadow-sm">【今月は残り3枠（対応品質のため）】<br
+                                        class="md:hidden">値上げ設計図プライベートセッションを確保する</span>
+                                <div
+                                    class="absolute inset-0 bg-white/5 group-hover:bg-white/10 transition duration-300">
+                                </div>
+                            </button>
+                            <p class="mt-4 text-sm text-gray-500">
+                                ※無理な売り込みは一切いたしません。<br>
+                                ※フォーム送信後、24時間以内に担当者よりご連絡いたします。
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- 5. Closing -->
+    <section class="py-24 bg-navy-900 text-white px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-2xl md:text-4xl font-serif font-bold mb-8 leading-tight">
+                今すぐ行動を起こさなければ、<br>
+                明日もまた<span class="inline-block">「値引き」を強いられることになる。</span>
+            </h2>
+            <a href="#offer"
+                class="inline-block bg-gold-500 hover:bg-gold-400 text-white font-serif font-bold py-4 px-12 rounded-full shadow-lg border-b-4 border-gold-700 active:border-b-0 active:translate-y-1 active:shadow-inner transition-all duration-100 text-lg tracking-wider group relative overflow-hidden">
+                <span class="relative z-10 text-shadow-sm">【今月は残り3枠（対応品質のため）】値上げ設計図プライベートセッションを確保する</span>
+                <div class="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition duration-300"></div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-navy-900 text-gray-500 py-8 text-center text-sm border-t border-gray-800">
+        <p>&copy; 2025 Quiet Authority Design. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
